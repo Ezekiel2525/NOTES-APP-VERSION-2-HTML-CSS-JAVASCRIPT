@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 70%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #cf9aff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,  #ccc, #cf9aff);
+    padding: 5rem 8rem;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.heading img {
+    width: 60px;
+    height: auto;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.createbox button {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    background-color: red;
+    /* background-color: rgb(114, 174, 55); */
+    margin: 3rem 0 3.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.createbox button img {
+    width: 20px;
+    height: auto;
+    margin-right: 1rem;  
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 35rem;
+    min-height: 12rem;
+    background-color: #fff;
+    border: none;
+    border-radius: .3rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    margin: 30px 0;
+}
+
+.input-box img{
+    position: absolute;
+    width: 18px;
+    height: auto;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 786px) {
+    .container {
+        padding-top: 3% ;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .heading {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    .createbox button{
+        margin: 35px auto 40px;
+        display: block;
+        padding: 1rem 1.5rem;
+    }
+
+    .input-box {
+        padding: .7rem;
+       width: 100%;
+       max-width: 35rem;
+       margin-bottom: 40px;
+    }
+}
